@@ -31,9 +31,9 @@ public class LoginTest {
     public void validLogin() throws InterruptedException {
         new Loginpage(driver)
                 //PROPERTY
-                .enterEmail(getProperty("clientEmail"), getProperty("clientPassword"));
+        //        .enterEmail(getProperty("clientEmail"), getProperty("clientPassword"));
         //JSON
-        //.enterEmail(jsonReader.getJsonData("clientEmail"), jsonReader.getJsonData("clientPassword"))
+        .enterEmail(jsonReader.getJsonData("clientEmail"), jsonReader.getJsonData("clientPassword"))
         //  .verifyLoginSuccess("https://dev.emmhub.io/spot");
     }
 
